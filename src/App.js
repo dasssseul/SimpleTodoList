@@ -3,7 +3,6 @@ import { setItem } from './Storage.js';
 import TodoCount from './TodoCount.js';
 import TodoForm from './TodoForm.js';
 import TodoList from './TodoList.js';
-import DateInfo from './DateInfo.js';
 
 export default function App({ target, initialState }) {
   this.state = initialState;
@@ -15,11 +14,7 @@ export default function App({ target, initialState }) {
 
   new Header({
     target,
-    text: '🔥 To Do List',
-  });
-
-  new DateInfo({
-    target,
+    text: 'To Do List',
   });
 
   new TodoForm({
