@@ -6,6 +6,7 @@ export default function TodoList({
 }) {
   const todoListElement = document.createElement('div');
   target.appendChild(todoListElement);
+  todoListElement.className = 'todo-list';
 
   this.state = initialState;
 
