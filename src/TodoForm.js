@@ -4,7 +4,7 @@ export default function TodoForm({ target, onSubmit }) {
 
   this.render = () => {
     todoFormElement.innerHTML = `
-      <input name="todo" placeholder="오늘의 할 일을 입력해주세요!" />
+      <input name="todo" placeholder="오늘의 할 일을 입력해주세요!" autofocus/>
       <button><span class="material-icons">add_circle</span></button>
     `;
 
