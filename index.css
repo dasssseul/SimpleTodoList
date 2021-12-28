@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f3f4f8;
+}
+
+.app {
+  width: 360px;
+  height: 500px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.app .header-container {
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 220px 80px;
+  background-color: #7879f1;
+  border-radius: 16px 16px 0 0;
+  font-size: 32px;
+  color: white;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.header-container h2 {
+  text-align: center;
+}
+
+.date-info {
+  display: grid;
+  font-size: 18px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20px 10px;
+  gap: 5px;
+  place-items: center;
+}
+
+.date-info .day {
+  grid-row: 1 / 3;
+  font-size: 40px;
+}
+
+.app form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  border-radius: 16px;
+  border: none;
+  background-color: #f3f4f8;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+}
+
+form input {
+  width: 85%;
+  border-radius: 16px;
+  height: 32px;
+  padding: 0 10px;
+  border: none;
+  background-color: #f3f4f8;
+  outline-color: #7879f1;
+}
+
+form button {
+  border: none;
+  background-color: #f3f4f8;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+form button span {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.app .todo-list {
+  width: 90%;
+  height: 300px;
+  margin: 20px;
+  overflow-y: auto;
+}
+
+div ul .todo-item {
+  border-radius: 16px;
+  height: 32px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #f3f4f8;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+}
+
+.todo-item label {
+  width: 90%;
+  margin: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.todo-item input {
+  cursor: pointer;
+}
+
+.todo-item span {
+  cursor: pointer;
+}
+
+.app h4 {
+  width: 90%;
+  height: 36px;
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: #f3f4f8;
+  text-align: center;
+  line-height: 2;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 20px;
+}
